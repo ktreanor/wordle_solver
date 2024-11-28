@@ -16,10 +16,10 @@ class WordleSover:
     __scored_words = {}
 
     def __init__(self):
-        # Get the full path for the valid word csv
+        # Get the path for the valid words csv
         valid_words_file = os.path.join(os.path.dirname(__file__), "valid-words.csv")
 
-        # Open both the valid words and load into the list
+        # Open the valid words file and load into the list
         with open(valid_words_file) as valid_words:
             self.__valid_words.extend(valid_words.read().splitlines())
 
