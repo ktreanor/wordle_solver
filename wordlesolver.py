@@ -226,5 +226,4 @@ class WordleSover:
 
 if __name__ == "__main__":
     wordle = WordleSover()
-    # wordle.play(4)
-    wordle.get_letter_usage_by_word()
+    wordle.play(4)
