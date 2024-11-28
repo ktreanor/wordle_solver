@@ -153,7 +153,7 @@ class WordleSover:
         self.__working_list.clear()
         self.__working_list.extend(temp_list)
 
-    def refine_working_list(self, guess, result_key) -> None:
+    def __refine_working_list(self, guess, result_key) -> None:
         """
         Filters the working list based on a guessed word, and the result key returned from the puzzle.
 
@@ -216,7 +216,7 @@ class WordleSover:
             else:
                 result_key = input("\nResponse from Wordle: ")
 
-            self.refine_working_list(guess, result_key)
+            self.__refine_working_list(guess, result_key)
 
         if guess_number >= 5:
             print(f"Sorry you lost")
